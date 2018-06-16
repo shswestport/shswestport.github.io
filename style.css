@@ -1,0 +1,56 @@
+body {font-family: "Lato", sans-serif}
+
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.mySlides {display: none}
+
+div.mySlides.w3-display-container.w3-center {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.blog-section{
+  background-color: #59192b;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.blog-titles {
+text-align: left;
+font-size: 150%;
+font-weight: 700;
+text-decoration: none;
+}
+
+.blog-image {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: -20px;
+  transition: height 200ms ease;
+}
+
+.blog-image:hover{
+  height: 130px;
+}
+
+.blog-image:empty{
+  height: 50px;
+  background-color: #0c013a;
+}
+
+.blog-image img{
+  width: 1000px;
+  height: 1000px;
+  margin-top: -30%;
+}
+
+.blog-text{
+
+}
