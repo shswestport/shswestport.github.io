@@ -52,7 +52,20 @@
     <a href="#" class="w3-bar-item w3-button w3-padding-large">ENROLMENT</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
+  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+
 </div>
+
+
+<!-- Mobile Navbar -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -215,17 +228,16 @@
         <div id="map" style="width:400px;height:400px;background:yellow"></div>
 
         <script>
-        function myMap() {
-        var mapOptions = {
-            center: new google.maps.LatLng(53.8012648, -9.51755),
-            zoom: 10,
-            mapTypeId: google.maps.MapTypeId.HYBRID
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
         </script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamwZiss2R2mBuT2s2n9gjN3-yQlze8PA&callback=myMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUI5y6mn0Clsisgj1tbQgBHaWznempCLI&callback=initMap"></script>
       </div>
     </div>
   </div>
