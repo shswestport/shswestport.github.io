@@ -45,24 +45,25 @@
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="./html/academic/curriculum.html" class="w3-bar-item w3-button">Curriculum</a>
         <a href="./html/academic/book_list.html" class="w3-bar-item w3-button">Book Lists</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ENROLMENT</a>
       </div>
     </div>
     <a href="#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LATEST NEWS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">ENROLMENT</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+
 
 </div>
 
 
 <!-- Mobile Navbar -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINK</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINK</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINK</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINK</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
 
 
@@ -99,9 +100,7 @@
         id="band">
     <h2 class="w3-wide"><b>Welcome to the Sacred Heart School Website</b></h2>
     <p class="w3-opacity"><i>“Encouraging creativity and embracing diversity in a positive learning environment”</i></p>
-    <p class="w3-justify" style="background-image: url(./assets/crest_shs.jpg);
-          background-repeat: no-repeat;
-          background-position: center; background-blend-mode: screen;background-size: contain;"> The Sacred Heart School is a Voluntary Secondary School for girls situated in Westport, Co Mayo. The school has been part of the town for over 80 years and is constantly enriched by its interaction with the local community of Westport and the surrounding area. Inspired by the vision of Catherine McAuley, founder of the Mercy order and continued by our Trustees, CEIST, the Sacred Heart School is committed to a holistic education in the Catholic tradition.<br><br>
+    <p  id="principal-statement" class="w3-justify"> The Sacred Heart School is a Voluntary Secondary School for girls situated in Westport, Co Mayo. The school has been part of the town for over 80 years and is constantly enriched by its interaction with the local community of Westport and the surrounding area. Inspired by the vision of Catherine McAuley, founder of the Mercy order and continued by our Trustees, CEIST, the Sacred Heart School is committed to a holistic education in the Catholic tradition.<br><br>
 
     Our school is committed to providing the best possible education for all our students as a community of learners: showing respect, tolerance and care, valuing and celebrating diversity and creativity, and actively promoting inclusion for all. We are dedicated to creating a happy, safe and orderly learning environment, where our students can develop into self motivated young people.<br><br>
 
@@ -155,7 +154,7 @@
       </div>
 
       <div class="blog-section">
-        <div class="w3-container" style="margin-top: 20px; min-width: 750px; min-height: 300px; overflow: hidden">
+        <div class="w3-container blog-box">
           <div id="rss-feeds"></div>
         </div>
       </div>
@@ -233,7 +232,7 @@
             var myLatLng = {lat: 53.801251, lng: -9.517542};
 
             var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 20,
+              zoom: 16,
               center: myLatLng
             });
 
