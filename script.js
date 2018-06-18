@@ -1,8 +1,16 @@
 jQuery(function($) {
-  $("#rss-feeds").rss("https://shswestportblog.blogspot.com/feeds/posts/default?alt=rss",
+  $("#rss-feeds-main").rss("https://shswestportblog.blogspot.com/feeds/posts/default/-/main/?alt=rss",
   {
     limit: 2,
     entryTemplate:'<li><h1 class="blog-titles"><a href="{url}">{title}</h1><br/><div class="blog-image">{teaserImage}</div></a><br><span class="blog-text">{shortBody}</span>...</li>'
+  })
+})
+
+jQuery(function() {
+  $("#rss-feeds-parentsassoc").rss("https://shswestportblog.blogspot.com/feeds/posts/default/-/parentsassociation/?alt=rss",
+  {
+    limit: 2,
+    entryTemplate:'<li><h1 class="blog-titles"><a href="{url}">{title}</h1><br/><div class="blog-image">{teaserImage}</div></a><br><span class="blog-text">{body}</span></li>'
   })
 })
 
