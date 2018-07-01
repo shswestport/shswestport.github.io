@@ -1,14 +1,16 @@
-body {font-family: "Lato", sans-serif}
+body {
+  font-family: "Lato", sans-serif
+}
 
 a {
   text-decoration: none;
 }
 
-.unmarked-list li{
+.unmarked-list li {
   list-style: none;
 }
 
-#principal-statement{
+#principal-statement {
   background-image: url('./assets/crest_shs.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -16,28 +18,40 @@ a {
   background-size: contain;
 }
 
-.mySlides {display: none}
+.mySlides {
+  display: none
+}
 
 div.mySlides.w3-display-container.w3-center {
   max-height: 300px;
   overflow: hidden;
 }
 
-.blog-section{
+.blog-section {
   background-color: #59192b;
   border-radius: 20px;
   overflow: auto;
 }
 
-.blog-box{
-
-}
+.blog-box {}
 
 .blog-titles {
-text-align: left;
-font-size: 150%;
-font-weight: 700;
-text-decoration: none;
+  text-align: left;
+  font-size: 150%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.full-blog-titles {
+  font-family: roboto, arial, sans-serif;
+  background-color: #e2fbff;
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: -10px;
+  text-decoration: none;
 }
 
 .blog-image {
@@ -49,29 +63,27 @@ text-decoration: none;
   transition: height 200ms ease;
 }
 
-.blog-image:hover{
+.blog-image:hover {
   height: 130px;
 }
 
-.blog-image:empty{
+.blog-image:empty {
   height: 50px;
   background-color: #0c013a;
 }
 
-.blog-image img{
+.blog-image img {
   width: 1000px;
   height: auto;
   margin-top: -40%;
 }
 
-.blog-text{
+.blog-text {}
 
-}
-
-.text-content{
+.text-content {
   padding-right: 20px;
 }
 
-.dl-list li{
+.dl-list li {
   list-style-type: circle;
 }
