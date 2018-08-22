@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>Sacred Heart School Westport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../style.css">
+<!-- Core CSS file -->
+<link rel="stylesheet" href="../gallery/photoswipe.css">
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite,
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="../gallery/defaultskin/default-skin.css">
+
+<!-- Core JS file -->
+<script src="../gallery/photoswipe.min.js"></script>
+
+<!-- UI JS file -->
+<script src="../gallery/photoswipe-ui-default.min.js"></script>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Javascript SDK -->
+
+
+<!-- Navbar -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Our School">OUR SCHOOL <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="../blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="../index.html#newsletters" class="w3-bar-item w3-button">Newsletters</a>
+        <a href="./ourschool/facilities.html" class="w3-bar-item w3-button">Facilities</a>
+        <a href="../index.html#ceist" class="w3-bar-item w3-button">Ceist</a>
+        <a href="../index.html#prospectus" class="w3-bar-item w3-button">Prospectus</a>
+        <a href="./ourschool/policies.html" class="w3-bar-item w3-button">Policies</a>
+        <a href="./ourschool/extracur.html" class="w3-bar-item w3-button">Extra Curricular</a>
+        <a href="./ourschool/calendar.html" class="w3-bar-item w3-button">Calendar</a>
+        <a href="./ourschool/pastoralcare.html" class="w3-bar-item w3-button">Pastoral Care</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="ACADEMIC">ACADEMIC<i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="./academic/curriculum.html" class="w3-bar-item w3-button">Curriculum</a>
+        <a href="./academic/book_list.html" class="w3-bar-item w3-button">Book Lists</a>
+        <a href="./academic/timetables.html" class="w3-bar-item w3-button">Timetables</a>
+        <a href="./academic/newjunior.html" class="w3-bar-item w3-button">JCT</a>
+        <a href="./academic/programmes.html" class="w3-bar-item w3-button">Programmes</a>
+        <a href="./academic/guidnce.html" class="w3-bar-item w3-button">Guidance</a>
+      </div>
+    </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="ADMIN">ADMIN<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./administrative/parentsassoc.html" class="w3-bar-item w3-button">Parents Association</a>
+          <a href="./administrative/staff.html" class="w3-bar-item w3-button">Staff</a>
+          <a href="./administrative/vacancies.html" class="w3-bar-item w3-button">Vacancies</a>
+        </div>
+      </div>
+      <a href="../index.html#news" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LATEST NEWS</a>
+      <a href="../index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+  	<div class="w3-cell text-content">
+    <h1 class="w3-wide"><b>Gallery</b></h1>
+    <h2>Upcoming Events and Important Dates</h2>
+    <img  src="../assets/banner.bmp" alt="banner">
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+  <div class="w3-container w3-cell" style="background-color: #b3003b;min-width: 100px;"></div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+var items = [
+    {
+        src: 'https://placekitten.com/600/400',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
+    }
+];
+
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
+
+</script>
+
+<!-- footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/Shswestport/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/shs_westport"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="./blog.html"><i class="fa fa-book w3-hover-opacity"></i></a>
+</footer>
+
+
+  </body>
+</html>
